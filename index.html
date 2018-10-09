@@ -1,0 +1,17 @@
+---
+---
+
+{% for apps in site.data.byapp %}
+    {% assign app = apps[1] %}
+
+    <div>
+        {% for link in app.links %}
+            {% include link.html %}
+        {% endfor %}
+    </div>
+
+
+{% endfor %}
+    
+    
+
